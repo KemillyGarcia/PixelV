@@ -1,4 +1,4 @@
-* {
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -58,7 +58,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 header {
@@ -155,56 +154,57 @@ header .container-grid {
     margin-top: 30px;
 }
 
-/* ---------------------------------PARALLAX-------------------------------------- */
+
+/* -----------------PARALLAX------------------ */
 
 #parallax {
     height: 250px;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/parallax.svg);
+    /* background-image: url(./imgs/parallax.svg); */
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/parallax.svg);
     background-attachment: fixed;
     background-size: 30%;
     margin-bottom: 120px;
 }
 
-/* ------------------------------Serviços-------------------------- */
+/* --------------SERVICOS--------------- */
 
-#servicos{
+#servicos {
     margin-bottom: 120px;
 }
 
-#servicos .titulo{
+#servicos .titulo {
     justify-content: center;
-    margin-bottom: 55px;
+    margin-left: 55px;
 }
 
-#servicos h2{
+#servicos h2 {
     margin-left: 5px;
+
 }
 
-.container-cards{
+.container-cards {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 
-
-    position: relative;
+    position: relative
 }
 
-.linha-roxa{
+.linha-roxa {
     position: absolute;
     z-index: -1;
-    top: calc(50%-125px);
+    top: calc(50% - 125px);
+
 
     height: 250px;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(36,0,105,1)0%,rgba(71,0,207,1)100%);
-
+    background: linear-gradient(0deg, rgba(36, 0, 105, 1)0%, rgba(71, 0, 207, 1)100%);
 }
 
 
-
-#servicos .card{
+#servicos .card {
     width: 300px;
     margin: 20px;
     padding: 40px 20px;
@@ -213,42 +213,66 @@ header .container-grid {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
 
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#servicos .card h3{
-font-size: 24px;
-margin: 5px 0 30px;
-color: var(--roxo-pixelV);
-font-family: "Recursive", sans-linear-bold;
-text-align: center;
+#servicos .card h3 {
+    font-size: 24px;
+    margin: 5px 0 30px;
+    color: var(--roxo-pixelV);
+    font-family: "Recursive", sans-linear-bold;
+    text-align: center;
 }
 
-#servicos .card p{
-font-family: "recursive", sans-linear;
-font-size: 18px;
-margin-bottom: 20px;
-line-height:1.5
+#servicos .card p {
+    font-family: "Recursive" sans-linear;
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
-
-
-
-#servicos .card svg{
+#servicos .card svg {
     color: var(--roxo-pixelV);
     height: 75px;
 }
-#servicos .card:hover{
-    border: solid 3px var(--verde-pixelV);
+
+#servicos .card:hover {
+    border: solid 3px var(--verde-pixelV)
 }
 
-#servicos .card:hover h3{
+#servicos .card:hover h3 {
     color: var(--verde-pixelV);
 }
 
-#servicos .card:hover svg{
+#servicos .card:hover svg {
     fill: var(--verde-pixelV);
+
+}
+
+/* ------------- Cases de Sucesso--------------- */
+
+#cases h2 {
+    margin-right: 5px;
+
+}
+
+#cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+
+#cases img {
+    height: 300px;
+    border-radius: 40px;
+}
+
+#meuCarrossel {
+    max-width: 1170px;
+    width: 90%;
 }
